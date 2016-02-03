@@ -830,7 +830,7 @@ body {
     background-image: url(/img/dock.png);
     background-position: center 175px;
     background-repeat: no-repeat;
-    transition: all 1s ease 0s;
+    transition: all .5s ease 0s;
 }
 .osx-dock:hover {
     background-position: center bottom;
