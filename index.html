@@ -189,7 +189,7 @@ page-class: page__home
                 scrollVal = scrollMax;
             }
             
-            $('.demo-section').animate({
+            $('.demo-section').stop().animate({
 		        scrollLeft: scrollVal
 		    }, 200);
         });
