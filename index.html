@@ -174,7 +174,7 @@ page-class: page__home
 
 <script type="text/javascript">
 	$( document ).ready(function() {
-        $(".project__link").click(function() {
+        $(".project__link").hover(function() {
             var scrollMax = $(".demo-section div").outerWidth() - $(".demo-section").outerWidth();
             var projNum = $(this).attr("for");
             var scrollVal;
