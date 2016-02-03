@@ -174,7 +174,7 @@ page-class: page__home
 
 <script type="text/javascript">
 	$( document ).ready(function() {
-        $(".project__link").hover(function() {
+        $(".project__link").stop().hover(function() {
             var scrollMax = $(".demo-section div").outerWidth() - $(".demo-section").outerWidth();
             var projNum = $(this).attr("for");
             var scrollVal;
@@ -191,7 +191,7 @@ page-class: page__home
             
             $('.demo-section').animate({
 		        scrollLeft: scrollVal
-		    }, 400);
+		    }, 200);
         });
 	});
 </script>
