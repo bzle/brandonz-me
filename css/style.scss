@@ -833,6 +833,8 @@ body {
 }
 .osx-dock:hover {
     top: 175px;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
 }
 
 
