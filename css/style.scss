@@ -826,13 +826,15 @@ body {
 	height: 0;
 }
 .osx-dock {
-    position: relative;
-    top: 175px;
+    height: 175px;
+    background-img: url(/img/dock.png);
+    background-position: center bottom;
+    background-repeat: none;
     transition: all 1s ease 0s;
 }
 @media only screen and (min-width: 1080px) {
     .osx-dock {
-        top: 0;
+        background-position: center 175px;
     }
 }
 
