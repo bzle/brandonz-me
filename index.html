@@ -4,70 +4,84 @@ page-class: page__home
 ---
 
 <section>
-    <h1>Champion of the user and examiner of details:</h1>
-    <h1><b>I'm a "zellous" designer.</b></h1>
+    <div class="grid">
+        <div class="grid__item two-thirds">
+            <h1>Champion of the user and examiner of details:</h1>
+            <h1><b>I'm a "zellous" designer.</b></h1>
+        </div>
+    </div>
 </section>
 <section class="kind-words-section">
-    <h2>KIND WORDS</h2>
-    <div class="referral">
-        <img class="referral__img">
-        <p>“Brandon has a strong aesthetic and creates beautiful marketing materials. As a creative director and marketing expert, I'm very impressed with the work he has created and his attention to detail.”</p>
-        <p>Heather Cox</p>
-        <p>Marketing, graphic design & web strategy expert</p>
-    </div>
-    <div class="referral">
-        <img class="referral__img">
-        <p>“EXTREMELY design-focus and detail oriented. It's with these two skills that he creates visually aesthetic masterpieces. His user interfaces are made with a focus on usability and user interaction. The systems created are extremely intuitive and well branded. If you are looking for a new web application design, or to polish up your existing one, Brandon is your guy!”</p>
-        <p>Matt Steele</p>
-        <p>Software Engineer and Project Manager</p>
+    <div class="grid">
+        <div class="grid__item one-half">
+            <h2>KIND WORDS</h2>
+            <div class="referral">
+                <img class="referral__img">
+                <p>“Brandon has a strong aesthetic and creates beautiful marketing materials. As a creative director and marketing expert, I'm very impressed with the work he has created and his attention to detail.”</p>
+                <p>Heather Cox</p>
+                <p>Marketing, graphic design & web strategy expert</p>
+            </div>
+        </div>
+        <div class="grid__item one-half">
+            <div class="referral">
+                <img class="referral__img">
+                <p>“EXTREMELY design-focus and detail oriented. It's with these two skills that he creates visually aesthetic masterpieces. His user interfaces are made with a focus on usability and user interaction. The systems created are extremely intuitive and well branded. If you are looking for a new web application design, or to polish up your existing one, Brandon is your guy!”</p>
+                <p>Matt Steele</p>
+                <p>Software Engineer and Project Manager</p>
+            </div>
+        </div>
     </div>
 </section>
 <section>
-    <h2>PROJECTS</h2>
-    <nav class="projects__nav">
-        <div class="project__link"><span>1</span>Infolinx</div>
-        <div class="project__link"><span>2</span>Trible</div>
-        <div class="project__link"><span>3</span>Bravo</div>
-        <div class="project__link"><span>4</span>Freestate</div>
-    </nav>
-    <ul class="projects">
-        <li class="project">
-            <span class="project__num">1</span>
-            <h3 class="project__title">Infolinx</h3>
-            <p class="project__type">Website Redesign</p>
-            <p class="project__description">Infolinx is a company in the records management software industry. I worked there as their in-house designer for five years work on various web and print projects.
-
-The goal of this redesign was to make the content more digestible and give Infolinx more first impression credibility. The content was improved by breaking up the main text and adding photos and icons as compliments. To increase perceived credibility a full-width design with large images was used to help Infolinx be perceived as a company who’s staying current in the tech industry.</p>
-            <img class="project__screenshot" />
-        </li>
-        <li class="project">
-            <span class="project__num">2</span>
-            <h3 class="project__title">Trible</h3>
-            <p class="project__type">Web App / Website Design</p>
-            <p class="project__description">Trible is a side-project my business partner, Matt Steele, and I have been working on. The idea is to create a web app where people can read the Bible in a more social way than current online Bibles.
-
-The bread and butter of this social interaction is being able to read, post, and reply to questions and comments on any verse in the Bible. The goal of this social interaction is to lift one another up that we might be encouraged and better understand the Bible.</p>
-            <img class="project__screenshot" />
-        </li>
-        <li class="project">
-            <span class="project__num">3</span>
-            <h3 class="project__title">Bravo Landscaping</h3>
-            <p class="project__type">Website Redesign</p>
-            <p class="project__description">This website redesign is for a landscaping company in Texas. As evidenced by the pictures of their work, they run a high quality operation. Their previous site didn’t do their work credit and was therefore a barrier for attracting new clients.
-
-This redesign puts the photos of their high quality work on display in a bold way, so they can speak for themselves. Additionally, the clean custom design will inspire trust and confidence for first time visitors to the site.</p>
-            <img class="project__screenshot" />
-        </li>
-        <li class="project">
-            <span class="project__num">4</span>
-            <h3 class="project__title">Freestate Gymnastics</h3>
-            <p class="project__type">Website Redesign</p>
-            <p class="project__description">Growing up, I had the privilege of taking gymnastics classes at Freestate and later being a part of their trampoline team.
-
-The goal of this redesign is to show off visually the many opportunities they provide for people looking for an athletic outlet. In addition to that, the design and photos are meant to convey that Freestate is a place where you can learn to both excel and have fun.</p>
-            <img class="project__screenshot" />
-        </li>
-    </ul>
+    <div class="grid">
+        <div class="grid__item one-whole">
+            <h2>PROJECTS</h2>
+            <nav class="projects__nav">
+                <div class="project__link"><span>1</span>Infolinx</div>
+                <div class="project__link"><span>2</span>Trible</div>
+                <div class="project__link"><span>3</span>Bravo</div>
+                <div class="project__link"><span>4</span>Freestate</div>
+            </nav>
+        </div>
+        <ul class="projects grid">
+            <li class="project grid__item one-half">
+                <span class="project__num">1</span>
+                <h3 class="project__title">Infolinx</h3>
+                <p class="project__type">Website Redesign</p>
+                <p class="project__description">Infolinx is a company in the records management software industry. I worked there as their in-house designer for five years work on various web and print projects.
+    
+    The goal of this redesign was to make the content more digestible and give Infolinx more first impression credibility. The content was improved by breaking up the main text and adding photos and icons as compliments. To increase perceived credibility a full-width design with large images was used to help Infolinx be perceived as a company who’s staying current in the tech industry.</p>
+                <img class="project__screenshot" />
+            </li>
+            <li class="project grid__item one-half">
+                <span class="project__num">2</span>
+                <h3 class="project__title">Trible</h3>
+                <p class="project__type">Web App / Website Design</p>
+                <p class="project__description">Trible is a side-project my business partner, Matt Steele, and I have been working on. The idea is to create a web app where people can read the Bible in a more social way than current online Bibles.
+    
+    The bread and butter of this social interaction is being able to read, post, and reply to questions and comments on any verse in the Bible. The goal of this social interaction is to lift one another up that we might be encouraged and better understand the Bible.</p>
+                <img class="project__screenshot" />
+            </li>
+            <li class="project grid__item one-half">
+                <span class="project__num">3</span>
+                <h3 class="project__title">Bravo Landscaping</h3>
+                <p class="project__type">Website Redesign</p>
+                <p class="project__description">This website redesign is for a landscaping company in Texas. As evidenced by the pictures of their work, they run a high quality operation. Their previous site didn’t do their work credit and was therefore a barrier for attracting new clients.
+    
+    This redesign puts the photos of their high quality work on display in a bold way, so they can speak for themselves. Additionally, the clean custom design will inspire trust and confidence for first time visitors to the site.</p>
+                <img class="project__screenshot" />
+            </li>
+            <li class="project grid__item one-half">
+                <span class="project__num">4</span>
+                <h3 class="project__title">Freestate Gymnastics</h3>
+                <p class="project__type">Website Redesign</p>
+                <p class="project__description">Growing up, I had the privilege of taking gymnastics classes at Freestate and later being a part of their trampoline team.
+    
+    The goal of this redesign is to show off visually the many opportunities they provide for people looking for an athletic outlet. In addition to that, the design and photos are meant to convey that Freestate is a place where you can learn to both excel and have fun.</p>
+                <img class="project__screenshot" />
+            </li>
+        </ul>
+    </div>
 </section>
 
 <!--split-->
