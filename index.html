@@ -91,18 +91,9 @@ page-class: page__home
 
 <style>
 	* {
-		box-sizing: border-box;
+		/*box-sizing: border-box;*/
 		margin: 0;
 		padding: 0;
-	}
-	header {
-		background-color: #eee;
-		height: 80vh;
-		text-align: center;
-	}
-	header h1 {
-		position: relative;
-		top: 45%;
 	}
 	nav {
 		text-align: center;
@@ -146,15 +137,6 @@ page-class: page__home
 		max-width: 100%;
 		height: 800px;
 	}
-	footer {
-		background-color: #eee;
-		height: 20vh;
-		text-align: center;
-	}
-	footer h3 {
-		position: relative;
-		top: 45%;
-	}
 </style>
 
 <nav>
@@ -193,7 +175,7 @@ page-class: page__home
 <script type="text/javascript">
 	$( document ).ready(function() {
         $(".project__link").click(function() {
-            var scrollMax = $("section div").outerWidth() - $("section").outerWidth();
+            var scrollMax = $(".demo-section div").outerWidth() - $(".demo-section").outerWidth();
             var projNum = $(this).attr("for");
             var scrollVal;
             
@@ -207,7 +189,7 @@ page-class: page__home
                 scrollVal = scrollMax;
             }
             
-            $('section').animate({
+            $('.demo-section').animate({
 		        scrollLeft: scrollVal
 		    }, 400);
         });
@@ -218,7 +200,7 @@ page-class: page__home
 	$( document ).ready(function() {
         var x,y,top,left,down;
 
-		$("section").mousedown(function(e){
+		$(".demo-section").mousedown(function(e){
 		    e.preventDefault();
 		    down=true;
 		    x=e.pageX;
@@ -234,8 +216,8 @@ page-class: page__home
 		        
 		        //console.log(y+", "+newY+", "+top+", "+(top+(newY-y)));
 		        
-		        $("section").scrollTop(top-newY+y);    
-		        $("section").scrollLeft(left-newX+x);    
+		        $(".demo-section").scrollTop(top-newY+y);    
+		        $(".demo-section").scrollLeft(left-newX+x);    
 		    }
 		});
 		
