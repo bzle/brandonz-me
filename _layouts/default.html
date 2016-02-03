@@ -64,7 +64,9 @@
         <![endif]-->
         
         {% include header.html %}
-        {% assign contentArray = content | split: site.split %}{{ contentArray.first }}
+        <main>
+            {% assign contentArray = content | split: site.split %}{{ contentArray.first }}
+        </main>
         {% include footer.html %}
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
