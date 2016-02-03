@@ -84,8 +84,161 @@ page-class: page__home
     </div>
 </section>
 
+
+
+
+
+
+<style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	header {
+		background-color: #eee;
+		height: 80vh;
+		text-align: center;
+	}
+	header h1 {
+		position: relative;
+		top: 45%;
+	}
+	nav {
+		text-align: center;
+	}
+	nav a {
+		background-color: #eee;
+		color: blue;
+		cursor: pointer;
+		display: inline-block;
+		margin: 40px 10px;
+		padding: 14px 18px;
+		text-decoration: underline;
+	}
+	section {
+		background-color: #fcfcfc;
+		overflow-x: scroll;
+		padding: 120px 0;
+		white-space: nowrap;
+	}
+	section > div {
+		float: left;
+		padding: 0 15vw;
+	}
+	.project {
+		margin-right: 100px;
+		display: inline-block;
+		max-width: 70vw;
+	}
+	.project:last-child {
+		margin-right: 0;
+	}
+	.project__heading {
+		
+	}
+	.project__description {
+		
+	}
+	.project__img {
+		background-color: #eee;
+		width: 320px;
+		max-width: 100%;
+		height: 800px;
+	}
+	footer {
+		background-color: #eee;
+		height: 20vh;
+		text-align: center;
+	}
+	footer h3 {
+		position: relative;
+		top: 45%;
+	}
+</style>
+
+<nav>
+	<a class="project__link project-1__link" for="1">Project 1</a>
+	<a class="project__link project-2__link" for="2">Project 2</a>
+	<a class="project__link project-3__link" for="3">Project 3</a>
+	<a class="project__link project-4__link" for="4">Project 4</a>
+</nav>
+<section>
+	<div>
+		<div class="project project-1">
+			<h2 class="project__heading">Project 1</h2>
+			<p class="project__description">Project description></p>
+			<div class="project__img">Project img</div>
+		</div>
+		<div class="project project-2">
+			<h2 class="project__heading">Project 2</h2>
+			<p class="project__description">Project description></p>
+			<div class="project__img">Project img</div>
+		</div>
+		<div class="project project-3">
+			<h2 class="project__heading">Project 3</h2>
+			<p class="project__description">Project description></p>
+			<div class="project__img">Project img</div>
+		</div>
+		<div class="project project-4">
+			<h2 class="project__heading">Project 4</h2>
+			<p class="project__description">Project description></p>
+			<div class="project__img">Project img</div>
+		</div>
+	</div>
+</section>
+
 <!--split-->
 
 <script type="text/javascript">
-    
+	$( document ).ready(function() {
+        $(".project__link").click(function() {
+            var scrollMax = $("section div").outerWidth() - $("section").outerWidth();
+            var projNum = $(this).attr("for");
+            var scrollVal;
+            
+            if (projNum == 1) {
+                scrollVal = 0;
+            } else if (projNum == 2) {
+                scrollVal = scrollMax*1/3;
+            } else if (projNum == 3) {
+                scrollVal = scrollMax*2/3;
+            } else if (projNum == 4) {
+                scrollVal = scrollMax;
+            }
+            
+            $('section').animate({
+		        scrollLeft: scrollVal
+		    }, 400);
+        });
+	});
+</script>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+        var x,y,top,left,down;
+
+		$("section").mousedown(function(e){
+		    e.preventDefault();
+		    down=true;
+		    x=e.pageX;
+		    y=e.pageY;
+		    top=$(this).scrollTop();
+		    left=$(this).scrollLeft();
+		});
+		
+		$("body").mousemove(function(e){
+		    if(down){
+		        var newX=e.pageX;
+		        var newY=e.pageY;
+		        
+		        //console.log(y+", "+newY+", "+top+", "+(top+(newY-y)));
+		        
+		        $("section").scrollTop(top-newY+y);    
+		        $("section").scrollLeft(left-newX+x);    
+		    }
+		});
+		
+		$("body").mouseup(function(e){down=false;});
+	});
 </script>
