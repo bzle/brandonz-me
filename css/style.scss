@@ -802,6 +802,7 @@ h2, h4 {
     position: absolute;
     top: 0;
 }
+
 /*  -  -  -  -  *\
     $HEADER
 \*  -  -  -  -  */
@@ -813,6 +814,7 @@ header {
 }
 .header__logo {
 }
+
 /*  -  -  -  -  *\
     $HERO
 \*  -  -  -  -  */
@@ -850,6 +852,7 @@ header {
     font-size: 14px;
     padding: 6px 10px;
 }
+
 /*  -  -  -  -  *\
     $KIND-WORDS
 \*  -  -  -  -  */
@@ -888,6 +891,7 @@ header {
 .kind-words-section, footer {
     background-color: $purple;
 }
+
 /*  -  -  -  -  *\
     $PROJECTS
 \*  -  -  -  -  */
@@ -900,6 +904,7 @@ header {
 	padding: 120px 0;
 }
 .projects__nav {
+    cursor: default;
     text-align: center;
 }
 .project__link {
@@ -921,6 +926,7 @@ header {
 .project__img:last-child {
     margin-right: $edge-width;
 }
+
 /*  -  -  -  -  *\
     $FOOTER
 \*  -  -  -  -  */
