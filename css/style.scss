@@ -910,6 +910,9 @@ footer {
 footer:hover {
     background-position: center bottom;
 }
+footer a {
+    color: $light-purple;
+}
 /*@media only screen and (min-width: 1080px) {
     .osx-dock {
         background-position: center 175px;
@@ -919,7 +922,6 @@ footer:hover {
     position: absolute;
 }
 .contact-social__link {
-    color: $light-purple;
     display: block;
     padding: 10px 0;
     text-decoration: none;
