@@ -769,7 +769,7 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
     width: calc(100% / 4);
 }
 .math-grid__item.one-twelfth {
-    width: calc(100% / 12)px;
+    width: calc(100% / 12);
 }
 
 
