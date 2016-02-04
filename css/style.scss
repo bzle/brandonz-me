@@ -909,10 +909,11 @@ footer:hover {
     position: absolute;
 }
 .contact-social__link {
+    display: block;
     white-space: nowrap;
 }
 .contact-social__link i {
-    font-size: 16px;
+    font-size: 18px;
 }
 .logo__alert-box {
     position: absolute;
