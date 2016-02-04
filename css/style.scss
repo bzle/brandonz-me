@@ -836,35 +836,8 @@ body {
 .kind-words-section, footer {
     background-color: #270559;
 }
-
-.logo__alert-box {
-    position: absolute;
-}
-.logo__alert {
-    background: orange;
-    box-sizing: border-box;
-    color: white;
-    display: table-cell;
-    height: 40px;
-    padding: 0 15px 2px;
-    position: relative;
-	text-align: center;
-    vertical-align: middle;
-}
-.logo__alert:after {
-    border-top: 20px solid transparent;
-	border-right: 20px solid orange;
-	border-bottom: 20px solid transparent;
-	border-left: 0 solid transparent;
-	content: '';
-	display: block;  
-	position: absolute;
-	top: 0;
-	left: -20px;
-	width: 0;
-	height: 0;
-}
 .projects-section {
+    background-color: #F0F0F0;
 }
 .projects-container {
     background-color: #fcfcfc;
@@ -908,6 +881,33 @@ footer:hover {
         background-position: center 175px;
     }
 }*/
+.logo__alert-box {
+    position: absolute;
+}
+.logo__alert {
+    background: orange;
+    box-sizing: border-box;
+    color: white;
+    display: table-cell;
+    height: 40px;
+    padding: 0 15px 2px;
+    position: relative;
+	text-align: center;
+    vertical-align: middle;
+}
+.logo__alert:after {
+    border-top: 20px solid transparent;
+	border-right: 20px solid orange;
+	border-bottom: 20px solid transparent;
+	border-left: 0 solid transparent;
+	content: '';
+	display: block;  
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: 0;
+	height: 0;
+}
 
 
 
