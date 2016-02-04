@@ -795,7 +795,7 @@ body {
     height: 120px;
 }
 .kind-words-section, footer {
-    background-color: #24025D;
+    background-color: #270559;
 }
 
 .logo__alert-box {
@@ -827,7 +827,7 @@ body {
 }
 footer {
     background-image: url(/img/dock.png);
-    background-position: center 175px;
+    background-position: center calc(100% + 175px);
     background-repeat: no-repeat;
     padding-bottom: 175px;
     transition: all .5s ease 0s;
