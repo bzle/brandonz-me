@@ -765,9 +765,30 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 /*------------------------------------*\
     $MATH-GRID
 \*------------------------------------*/
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
 .math-grid__item {
-    display: inline-block;
+    display:inline-block;           /* [1] */
+    padding-left:$gutter;           /* [2] */
+    vertical-align:top;             /* [3] */
+    @if $mobile-first {
+        width:100%;                 /* [4] */
+    }
+    -webkit-box-sizing:border-box;  /* [5] */
+       -moz-box-sizing:border-box;  /* [5] */
+            box-sizing:border-box;  /* [5] */
+    font-size: 16px;                // inline-block fix
+    @if not $use-markup-fix {
+        letter-spacing:normal;
+        word-spacing:normal;
+    }
 }
+
 .math-grid__item.one-quarter {
     width: calc(100% / 4);
 }
