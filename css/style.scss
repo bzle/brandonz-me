@@ -871,8 +871,11 @@ body {
 .project {
     white-space: normal;
 }
+.project:first-child {
+    margin-left: 10vw;
+}
 .project__img:last-child {
-    margin: 0 10vw;
+    margin-right: 10vw;
 }
 footer {
     background-image: url(/img/dock.png);
