@@ -765,6 +765,9 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 /*------------------------------------*\
     $MATH-GRID
 \*------------------------------------*/
+.math-grid__item {
+    display: inline-block;
+}
 .math-grid__item.one-quarter {
     width: calc(100% / 4);
 }
