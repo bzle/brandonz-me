@@ -806,6 +806,7 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 \*  -  -  -  -  */
 $purple: #270559;
 $light-purple: #8850E7;
+$dark-purple: #170633;
 $orange: #F87F02;
 $teal: #333;
 $gray: #F0F0F0;
@@ -927,6 +928,15 @@ footer a {
 }*/
 .footer__logo-container {
     position: absolute;
+}
+.skill span {
+    opacity: .6;
+}
+.skill-max {
+    background-color: $dark-purple;
+}
+.skill-level {
+    background-color: $teal;
 }
 .contact-social__link {
     display: block;
