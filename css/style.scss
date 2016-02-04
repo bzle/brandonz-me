@@ -814,7 +814,7 @@ body {
 .header__logo {
     position: absolute;
     top: 80px;
-    left: 10vw;
+    left: calc(10vw + 24px);
 }
 .hero-section {
     background-color: #F0F0F0;
