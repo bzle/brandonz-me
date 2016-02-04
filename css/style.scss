@@ -849,12 +849,13 @@ header {
     color: $light-purple;
 }
 .referral__img {
-    display: table-cell;
+    display: inline-block;
     width: 120px;
     height: 120px;
 }
 .referral__text {
-    display: table-cell;
+    display: inline-block;
+    width: calc(100% -120px);
 }
 .kind-words-section, footer {
     background-color: $purple;
