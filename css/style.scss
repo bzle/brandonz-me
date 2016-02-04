@@ -845,10 +845,16 @@ header {
 /*  -  -  -  -  *\
     $KIND-WORDS
 \*  -  -  -  -  */
+.kind-words-section {
+    color: $light-purple;
+}
 .referral__img {
-    float: left;
+    display: table-cell;
     width: 120px;
     height: 120px;
+}
+.referral__text {
+    display: table-cell;
 }
 .kind-words-section, footer {
     background-color: $purple;
