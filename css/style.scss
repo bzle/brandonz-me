@@ -833,11 +833,13 @@ header {
 .hero-section h1 + h1 {
     font-weight: bold;
 }
-.my-name, .my-title {
-    background-color: #F0F0F0;
+.my-info {
     position: absolute;
     right: 0;
-    bottom: -100px;
+    bottom: 120px;
+}
+.my-name, .my-title {
+    background-color: #F0F0F0;
     text-align: right;
 }
 .my-name {
