@@ -812,6 +812,8 @@ $teal: #00B174;
 $gray: #F0F0F0;
 $black: #222;
 
+$edge-width: 6vw;
+
 /*  -  -  -  -  *\
     $GENERAL
 \*  -  -  -  -  */
@@ -831,7 +833,7 @@ h2, h4 {
 header {
     position: absolute;
     top: 80px;
-    left: calc(10vw + 24px);
+    left: calc($edge-width + 24px);
     z-index: 10;
 }
 .header__logo {
@@ -902,10 +904,10 @@ header {
     white-space: normal;
 }
 .project:first-child {
-    margin-left: 10vw;
+    margin-left: $edge-width;
 }
 .project__img:last-child {
-    margin-right: 10vw;
+    margin-right: $edge-width;
 }
 footer {
     background-image: url(/img/dock.png);
