@@ -832,10 +832,12 @@ body {
 }
 .projects {
     white-space: nowrap;
-    padding-right: 15vw;
 }
 .project {
     white-space: normal;
+}
+.project:last-child {
+    margin-right: 15vw;
 }
 footer {
     background-image: url(/img/dock.png);
