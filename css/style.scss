@@ -800,6 +800,15 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 /*------------------------------------*\
     $CUSTOM-CSS
 \*------------------------------------*/
+/*  -  -  -  -  *\
+    $VARIABLES
+\*  -  -  -  -  */
+$purple: #270559;
+$light-purple: #8850E7;
+$orange: #F87F02;
+$teal: #333;
+$gray: #F0F0F0;
+$black: #333;
 
 /*  -  -  -  -  *\
     $GENERAL
@@ -820,7 +829,7 @@ header {
 .header__logo {
 }
 .hero-section {
-    background-color: #F0F0F0;
+    background-color: $gray;
     background-image: url(/img/me__photo.png);
     background-repeat: no-repeat;
     background-position: calc(100% + 120px) bottom;
@@ -840,7 +849,7 @@ header {
     bottom: 120px;
 }
 .my-name, .my-title {
-    background-color: #F0F0F0;
+    background-color: $gray;
     float: right;
     clear: both;
 }
@@ -859,10 +868,10 @@ header {
     height: 120px;
 }
 .kind-words-section, footer {
-    background-color: #270559;
+    background-color: $purple;
 }
 .projects-section {
-    background-color: #F0F0F0;
+    background-color: $gray;
 }
 .projects-container {
 	overflow-x: scroll;
@@ -909,19 +918,19 @@ footer:hover {
     position: absolute;
 }
 .contact-social__link {
-    color: #8850E7;
+    color: $light-purple;
     display: block;
     padding: 10px 0;
     text-decoration: none;
     white-space: nowrap;
 }
 .contact-social__link i {
-    color: #8850E7;
+    color: $light-purple;
     font-size: 20px;
     margin-right: 10px;
 }
 .contact-social__spacer {
-    background-color: #8850E7;
+    background-color: $light-purple;
     height: 1px;
     width: 30px;
     margin: 12px 0;
@@ -934,7 +943,7 @@ footer:hover {
     white-space: nowrap;
 }
 .logo__alert {
-    background: #F87F02;
+    background: $orange;
     box-sizing: border-box;
     color: white;
     display: table-cell;
@@ -947,7 +956,7 @@ footer:hover {
 }
 .logo__alert:after {
     border-top: 15px solid transparent;
-	border-right: 15px solid #F87F02;
+	border-right: 15px solid $orange;
 	border-bottom: 15px solid transparent;
 	border-left: 0 solid transparent;
 	content: '';
