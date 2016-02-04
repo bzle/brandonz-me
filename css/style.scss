@@ -825,14 +825,13 @@ body {
 	width: 0;
 	height: 0;
 }
-.osx-dock {
-    height: 175px;
+footer {
     background-image: url(/img/dock.png);
     background-position: center 175px;
     background-repeat: no-repeat;
     transition: all .5s ease 0s;
 }
-.osx-dock:hover {
+footer:hover {
     background-position: center bottom;
 }
 /*@media only screen and (min-width: 1080px) {
