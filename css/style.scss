@@ -829,7 +829,7 @@ h2, h4 {
 }
 .grid {
     margin: auto;
-    max-width: 80vw;
+    max-width: $page-width;
 }
 header {
     position: absolute;
