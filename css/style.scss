@@ -766,10 +766,10 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
     $MATH-GRID
 \*------------------------------------*/
 .math-grid__item.one-quarter {
-    width: calc(1/4)px;
+    width: calc(100% / 4);
 }
 .math-grid__item.one-twelfth {
-    width: calc(1/12)px;
+    width: calc(100% / 12)px;
 }
 
 
