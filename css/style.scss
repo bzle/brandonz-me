@@ -800,6 +800,7 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 /*------------------------------------*\
     $CUSTOM-CSS
 \*------------------------------------*/
+
 /*  -  -  -  -  *\
     $VARIABLES
 \*  -  -  -  -  */
@@ -815,6 +816,9 @@ $black: #333;
 \*  -  -  -  -  */
 body {
     font-family: "Lato", sans-serif;
+}
+h4 {
+    letter-spacing: 2px;
 }
 .grid {
     margin: auto;
