@@ -922,14 +922,14 @@ footer:hover {
     display: table-cell;
     font-size: 14px;
     height: 40px;
-    padding: 0 15px 2px;
+    padding: 0 15px 2px 10px;
     position: relative;
 	text-align: center;
     vertical-align: middle;
 }
 .logo__alert:after {
     border-top: 20px solid transparent;
-	border-right: 20px solid orange;
+	border-right: 20px solid #F87F02;
 	border-bottom: 20px solid transparent;
 	border-left: 0 solid transparent;
 	content: '';
