@@ -790,10 +790,10 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 }
 
 .math-grid__item.one-quarter {
-    width: calc(80vw / 4);
+    width: calc($page-width / 4);
 }
 .math-grid__item.one-twelfth {
-    width: calc(80vw / 12);
+    width: calc($page-width / 12);
 }
 
 
