@@ -782,7 +782,7 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
     -webkit-box-sizing:border-box;  /* [5] */
        -moz-box-sizing:border-box;  /* [5] */
             box-sizing:border-box;  /* [5] */
-    font-size: 16px;                // inline-block fix
+    font-size: 14px;                // inline-block fix
     @if not $use-markup-fix {
         letter-spacing:normal;
         word-spacing:normal;
@@ -813,6 +813,7 @@ $gray: #F0F0F0;
 $black: #222;
 
 $edge-width: 6vw;
+$page-width: 100vw - ($edge-width * 2);
 
 /*  -  -  -  -  *\
     $GENERAL
