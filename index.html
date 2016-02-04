@@ -161,3 +161,20 @@ matt-img_path: /img/referral__matt.png
 		$("body").mouseup(function(e){down=false;});
 	});
 </script>
+
+<!-- Add venobox -->
+<link rel="stylesheet" href="/js/ext__venobox/venobox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/js/ext__venobox/venobox.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.project__screenshot').venobox({
+            // framewidth: '400px',        // default: ''
+            // frameheight: '300px',       // default: ''
+            // border: '10px',             // default: '0'
+            // bgcolor: '#5dff5e',         // default: '#fff'
+            // titleattr: 'data-title',    // default: 'title'
+            numeratio: true,            // default: false
+            infinigall: true            // default: false
+        });
+    });
+</script>
