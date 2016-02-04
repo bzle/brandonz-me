@@ -943,7 +943,24 @@ footer a {
 .skill-level {
     background-color: $teal;
     height: 2px;
+}
+.skill--illustrator {
+    width: 70%;
+}
+.skill--photoshop {
+    width: 70%;
+}
+.skill--html {
+    width: 90%;
+}
+.skill--scss {
     width: 80%;
+}
+.skill--jquery {
+    width: 60%;
+}
+.skill--liquid {
+    width: 70%;
 }
 .contact-social__link {
     display: block;
