@@ -926,6 +926,9 @@ header {
 .project__img:last-child {
     margin-right: $edge-width;
 }
+.project__img:focus {
+    outline: 0;
+}
 
 /*  -  -  -  -  *\
     $FOOTER
