@@ -864,8 +864,13 @@ body {
 	overflow-x: scroll;
 	padding: 120px 0;
 }
+.projects__nav {
+    text-align: center;
+}
 .project__link {
+    background-color: #bbb;
     display: inline-block;
+    margin: 10px;
 }
 .projects {
     float: left;
