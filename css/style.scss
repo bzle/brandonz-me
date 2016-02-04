@@ -848,6 +848,9 @@ header {
 .kind-words-section {
     color: $light-purple;
 }
+.kind-words-section h2 {
+    position: absolute;
+}
 .referral {
 }
 .referral__img {
