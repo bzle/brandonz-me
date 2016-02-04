@@ -850,12 +850,12 @@ header {
 }
 .referral__img {
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 30%;
 }
 .referral__text {
     display: inline-block;
-    width: calc(100% -120px);
+    margin-left: 5%;
+    width: 60%;
 }
 .kind-words-section, footer {
     background-color: $purple;
