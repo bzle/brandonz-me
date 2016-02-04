@@ -217,7 +217,7 @@ matt-img_path: /img/referral__matt.png
 	$( document ).ready(function() {
         var x,y,top,left,down;
 
-		$(".demo-section").mousedown(function(e){
+		$(".projects-container").mousedown(function(e){
 		    e.preventDefault();
 		    down=true;
 		    x=e.pageX;
@@ -233,8 +233,8 @@ matt-img_path: /img/referral__matt.png
 		        
 		        //console.log(y+", "+newY+", "+top+", "+(top+(newY-y)));
 		        
-		        $(".demo-section").scrollTop(top-newY+y);    
-		        $(".demo-section").scrollLeft(left-newX+x);    
+		        $(".projects-container").scrollTop(top-newY+y);    
+		        $(".projects-container").scrollLeft(left-newX+x);    
 		    }
 		});
 		
