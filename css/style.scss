@@ -851,6 +851,9 @@ header {
     position: relative;
 }
 .kind-words-section h2 {
+    border: 1px solid $light-purple;
+    border-top: 0 solid transparent;
+    padding: 8px 12px;
     position: absolute;
     top: 0;
 }
