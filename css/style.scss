@@ -806,7 +806,6 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 \*  -  -  -  -  */
 body {
     font-family: "Lato", sans-serif;
-    font-size: 14px;
 }
 .grid {
     margin: auto;
@@ -990,6 +989,6 @@ main {
 .grid {
     font-size: 0;
     > .grid__item {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
