@@ -760,43 +760,6 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 }
 
 
-
-
-/*------------------------------------*\
-    $MATH-GRID
-\*------------------------------------*/
-/**
- * 1. Cause columns to stack side-by-side.
- * 2. Space columns apart.
- * 3. Align columns to the tops of each other.
- * 4. Full-width unless told to behave otherwise.
- * 5. Required to combine fluid widths and fixed gutters.
- */
-.math-grid__item {
-    display:inline-block;           /* [1] */
-    padding-left:$gutter;           /* [2] */
-    vertical-align:top;             /* [3] */
-    @if $mobile-first {
-        width:100%;                 /* [4] */
-    }
-    -webkit-box-sizing:border-box;  /* [5] */
-       -moz-box-sizing:border-box;  /* [5] */
-            box-sizing:border-box;  /* [5] */
-    font-size: 14px;                // inline-block fix
-    @if not $use-markup-fix {
-        letter-spacing:normal;
-        word-spacing:normal;
-    }
-}
-
-.math-grid__item.one-quarter {
-    width: calc(#{$page-width} / 4);
-}
-.math-grid__item.one-twelfth {
-    width: calc(#{$page-width} / 12);
-}
-
-
 /*------------------------------------*\
     $CUSTOM-CSS
 \*------------------------------------*/
@@ -813,7 +776,7 @@ $gray: #F0F0F0;
 $black: #222;
 
 $edge-width: 6vw;
-$page-width: 100vw;
+$page-width: 100vw - ($edge-width * 2);
 
 /*  -  -  -  -  *\
     $GENERAL
@@ -1016,12 +979,39 @@ footer a {
 	height: 0;
 }
 
-
-
 /*------------------------------------*\
-    END $CUSTOM-CSS
+    $MATH-GRID
 \*------------------------------------*/
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+.math-grid__item {
+    display:inline-block;           /* [1] */
+    padding-left:$gutter;           /* [2] */
+    vertical-align:top;             /* [3] */
+    @if $mobile-first {
+        width:100%;                 /* [4] */
+    }
+    -webkit-box-sizing:border-box;  /* [5] */
+       -moz-box-sizing:border-box;  /* [5] */
+            box-sizing:border-box;  /* [5] */
+    font-size: 14px;                // inline-block fix
+    @if not $use-markup-fix {
+        letter-spacing:normal;
+        word-spacing:normal;
+    }
+}
 
+.math-grid__item.one-quarter {
+    width: calc(#{$page-width} / 4);
+}
+.math-grid__item.one-twelfth {
+    width: calc(#{$page-width} / 12);
+}
 
 /*------------------------------------*\
     $STICKY-FOOTER
