@@ -790,10 +790,10 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 }
 
 .math-grid__item.one-quarter {
-    width: calc(100% / 4);
+    width: calc(80vw / 4);
 }
 .math-grid__item.one-twelfth {
-    width: calc(100% / 12);
+    width: calc(80vw / 12);
 }
 
 
@@ -865,6 +865,7 @@ body {
 .projects-container {
 }
 .projects {
+    float: left;
     white-space: nowrap;
 }
 .project {
