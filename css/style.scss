@@ -864,6 +864,9 @@ body {
 	overflow-x: scroll;
 	padding: 120px 0;
 }
+.project__link {
+    display: inline-block;
+}
 .projects {
     float: left;
     white-space: nowrap;
