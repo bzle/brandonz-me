@@ -762,7 +762,15 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 
 
 
-
+/*------------------------------------*\
+    $MATH-GRID
+\*------------------------------------*/
+.math-grid__item.one-quarter {
+    width: calc(1/4)px;
+}
+.math-grid__item.one-twelfth {
+    width: calc(1/12)px;
+}
 
 
 /*------------------------------------*\
@@ -831,7 +839,6 @@ body {
 	padding: 120px 0;
 }
 .projects-container {
-    float: left;
 }
 .projects {
     white-space: nowrap;
