@@ -832,6 +832,19 @@ header {
 .hero-section h1 + h1 {
     font-weight: bold;
 }
+.my__name, .my__title {
+    background-color: #F0F0F0;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    text-align: right;
+}
+.my__name {
+    
+}
+.my__title {
+    
+}
 .referral__img {
     float: left;
     width: 120px;
