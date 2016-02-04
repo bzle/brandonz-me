@@ -851,6 +851,7 @@ header {
 }
 .kind-words-section h2 {
     position: absolute;
+    top: 0;
 }
 .referral {
 }
@@ -861,12 +862,16 @@ header {
 }
 .referral__text {
     display: inline-block;
+    line-height: 22px;
     margin-left: 5%;
     width: 60%;
     vertical-align: top;
 }
 .referral__quote {
     margin-top: 0;
+}
+.referral__name, .referral__title {
+    opacity: .8;
 }
 .referral__name {
     margin-bottom: 0;
