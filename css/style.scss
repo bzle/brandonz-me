@@ -829,13 +829,12 @@ body {
 	background-color: #fcfcfc;
 	overflow-x: scroll;
 	padding: 120px 0;
-	white-space: nowrap;
 }
 .projects {
-    
+    white-space: nowrap;
 }
 .project {
-    
+    white-space: normal;
 }
 footer {
     background-image: url(/img/dock.png);
