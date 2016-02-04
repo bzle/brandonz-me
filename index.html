@@ -41,10 +41,10 @@ matt-img_path: /img/referral__matt.png
         <div class="grid__item one-whole">
             <h2>PROJECTS</h2>
             <nav class="projects__nav">
-                <div class="project__link"><span>1</span>Infolinx</div>
-                <div class="project__link"><span>2</span>Trible</div>
-                <div class="project__link"><span>3</span>Bravo</div>
-                <div class="project__link"><span>4</span>Freestate</div>
+                <div class="project__link" for="1"><span>1</span>Infolinx</div>
+                <div class="project__link" for="2"><span>2</span>Trible</div>
+                <div class="project__link" for="3"><span>3</span>Bravo</div>
+                <div class="project__link" for="4"><span>4</span>Freestate</div>
             </nav>
         </div>
         <div class="projects grid">
@@ -190,7 +190,7 @@ matt-img_path: /img/referral__matt.png
 <script type="text/javascript">
 	$( document ).ready(function() {
         $(".project__link").stop().hover(function() {
-            var scrollMax = $(".demo-section div").outerWidth() - $(".demo-section").outerWidth();
+            var scrollMax = $(".projects-section div").outerWidth() - $(".projects-section").outerWidth();
             var projNum = $(this).attr("for");
             var scrollVal;
             
@@ -204,7 +204,7 @@ matt-img_path: /img/referral__matt.png
                 scrollVal = scrollMax;
             }
             
-            $('.demo-section').stop().animate({
+            $('.projects-section').stop().animate({
 		        scrollLeft: scrollVal
 		    }, 200);
         });
