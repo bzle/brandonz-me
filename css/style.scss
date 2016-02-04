@@ -794,6 +794,14 @@ h2, h4 {
     margin: auto;
     max-width: $page-width;
 }
+.section-heading {
+    border: 1px solid $light-purple;
+    border-top: 0 solid transparent;
+    margin: 0;
+    padding: 14px 20px;
+    position: absolute;
+    top: 0;
+}
 /*  -  -  -  -  *\
     $HEADER
 \*  -  -  -  -  */
@@ -849,14 +857,6 @@ header {
     color: $light-purple;
     padding: 120px 0 110px;
     position: relative;
-}
-.kind-words-section h2 {
-    border: 1px solid $light-purple;
-    border-top: 0 solid transparent;
-    margin: 0;
-    padding: 14px 20px;
-    position: absolute;
-    top: 0;
 }
 .referral {
 }
