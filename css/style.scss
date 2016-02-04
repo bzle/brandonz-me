@@ -849,7 +849,6 @@ header {
     color: $light-purple;
 }
 .referral {
-    vertical-align: top;
 }
 .referral__img {
     display: inline-block;
@@ -859,6 +858,7 @@ header {
     display: inline-block;
     margin-left: 5%;
     width: 60%;
+    vertical-align: top;
 }
 .kind-words-section, footer {
     background-color: $purple;
