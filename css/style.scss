@@ -794,6 +794,9 @@ h2, h4 {
     margin: auto;
     max-width: $page-width;
 }
+/*  -  -  -  -  *\
+    $HEADER
+\*  -  -  -  -  */
 header {
     position: absolute;
     top: 80px;
@@ -802,6 +805,9 @@ header {
 }
 .header__logo {
 }
+/*  -  -  -  -  *\
+    $HERO
+\*  -  -  -  -  */
 .hero-section {
     background-color: $gray;
     background-image: url(/img/me__photo.png);
@@ -836,6 +842,9 @@ header {
     font-size: 14px;
     padding: 6px 10px;
 }
+/*  -  -  -  -  *\
+    $KIND-WORDS
+\*  -  -  -  -  */
 .referral__img {
     float: left;
     width: 120px;
@@ -844,6 +853,9 @@ header {
 .kind-words-section, footer {
     background-color: $purple;
 }
+/*  -  -  -  -  *\
+    $PROJECTS
+\*  -  -  -  -  */
 .projects-section {
     background-color: $gray;
 }
@@ -873,6 +885,9 @@ header {
 .project__img:last-child {
     margin-right: $edge-width;
 }
+/*  -  -  -  -  *\
+    $FOOTER
+\*  -  -  -  -  */
 footer {
     background-image: url(/img/dock.png);
     background-position: center calc(100% + 175px);
@@ -946,6 +961,9 @@ footer a {
     width: 30px;
     margin: 12px 0;
 }
+/*  -  -  -  -  *\
+    $EXTRA
+\*  -  -  -  -  */
 .logo__alert-box {
     position: absolute;
     top: 35%;
