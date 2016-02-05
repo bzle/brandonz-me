@@ -923,6 +923,9 @@ header {
 .project:first-child {
     margin-left: $edge-width;
 }
+.project__num {
+    position: absolute;
+}
 .project__img:last-child {
     margin-right: $edge-width;
 }
