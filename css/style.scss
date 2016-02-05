@@ -937,6 +937,13 @@ header {
     left: 7px;
     opacity: 0.06;
 }
+.project__indicator {
+    background-color: $gray;
+    border: 1px solid #555;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
 .projects__nav-line {
     background-color: $black;
     position: absolute;
