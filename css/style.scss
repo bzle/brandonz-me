@@ -919,6 +919,15 @@ header {
     margin: 10px;
     padding: 10px 16px;
 }
+.projects__nav-line {
+    background-color: $black;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    z-index: 0;
+}
 .projects {
     float: left;
     white-space: nowrap;
