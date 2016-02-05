@@ -940,6 +940,7 @@ header {
 .project__indicator {
     background-color: $gray;
     border: 1px solid #bbb;
+    box-shadow: 0 0 0 8px $gray;
     height: 12px;
     width: 12px;
     border-radius: 10px;
@@ -947,10 +948,13 @@ header {
     bottom: -30px;
     left: 45%;
 }
+.project__link:hover .project__indicator {
+    background-color: #bbb;
+}
 .projects__nav-line {
     background-color: $black;
     position: absolute;
-    top: calc(100% - 36px);
+    top: calc(100% + 23px);
     left: 10%;
     width: 80%;
     height: 1px;
