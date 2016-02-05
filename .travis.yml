@@ -1,5 +1,4 @@
 language: ruby
+script: "./build.sh" # execute this script on each commit
 rvm:
-  - 2.1
-script:
-  - bundle exec jekyll build
+- 2.1.2 # version of `ruby'
