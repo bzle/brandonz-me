@@ -99,6 +99,7 @@ matt-img_path: /img/referral__matt.png
         </div>
     </div>
 </section>
+<div class="image-preloader"></div>
 
 
 <!--split-->
@@ -170,5 +171,12 @@ matt-img_path: /img/referral__matt.png
             numeratio: true,            // default: false
             infinigall: true            // default: false
         });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        var images_to_preload = "";
+        images_to_preload += "<img src='/img/project__infolinx.png'>";
+        $(".image-preloader").html(images_to_preload);
     });
 </script>
