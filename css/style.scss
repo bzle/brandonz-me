@@ -933,7 +933,12 @@ header {
     left: -40px;
 }
 .project__title {
+    font-size: 26px;
+    font-weight: 900;
     margin-top: 0;
+}
+.project__type {
+    font-weight: 600;
 }
 .project__img:last-child {
     margin-right: $edge-width;
