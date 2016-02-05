@@ -870,7 +870,7 @@ header {
 }
 .referral__text {
     display: inline-block;
-    line-height: 22px;
+    line-height: 24px;
     margin-left: 5%;
     width: 60%;
     vertical-align: top;
@@ -943,6 +943,9 @@ header {
 .project__type {
     font-weight: 600;
     margin-top: 0;
+}
+.project__description {
+    line-height: 24px;
 }
 .project__img:focus {
     outline: 0;
