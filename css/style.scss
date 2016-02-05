@@ -795,6 +795,9 @@ h2, h4 {
     font-weight: 800;
     letter-spacing: 2px;
 }
+.image-preloader {
+    display: none;
+}
 .grid {
     margin: auto;
     max-width: $page-width;
