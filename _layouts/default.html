@@ -10,6 +10,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% endif %}
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.name }} is my name, and UI design is my game.{% endif %}">
         <link rel="shortcut icon" href="/img/favicon.png">
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
@@ -70,6 +71,9 @@
         {% include footer.html %}
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            $('.copyright-year').html(new Date().getFullYear());
+        </script>
         {% assign contentArrayLength = contentArray | size %}{% if contentArrayLength > 1  %}{{ contentArray.last }}{% endif %}
     </body>
 </html>
