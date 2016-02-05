@@ -1013,6 +1013,9 @@ header {
     opacity: 0.4;
     text-shadow: 0 0 4px rgba(0,0,0,0.1);
 }
+.project__img-wrap:hover .icon--screenshot-zoom {
+    opacity: 0.8;
+}
 .project__img:focus {
     outline: 0;
 }
