@@ -927,6 +927,30 @@ header {
 .project__img:last-child {
     margin-right: $edge-width * 2;
 }
+
+
+.project--infolinx .project__num,
+.project--infolinx .project__title,
+.project--infolinx .project__type {
+    color: $infolinx-orange;
+}
+.project--trible .project__num,
+.project--trible .project__title,
+.project--trible .project__type {
+    color: trible-purple;
+}
+.project--bravo .project__num,
+.project--bravo .project__title,
+.project--bravo .project__type {
+    color: $bravo-gold;
+}
+.project--freestate .project__num,
+.project--freestate .project__title,
+.project--freestate .project__type {
+    color: $freestate-red;
+}
+
+
 .project__num {
     font-size: 200px;
     font-weight: 900;
