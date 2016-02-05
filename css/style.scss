@@ -922,7 +922,10 @@ header {
     white-space: normal;
 }
 .project:first-child {
-    margin-left: $edge-width;
+    margin-left: $edge-width * 2;
+}
+.project__img:last-child {
+    margin-right: $edge-width * 2;
 }
 .project__num {
     font-size: 200px;
@@ -939,9 +942,6 @@ header {
 }
 .project__type {
     font-weight: 600;
-}
-.project__img:last-child {
-    margin-right: $edge-width;
 }
 .project__img:focus {
     outline: 0;
