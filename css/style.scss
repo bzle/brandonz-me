@@ -920,7 +920,7 @@ header {
     background-color: $gray;
     display: inline-block;
     margin: 0 16px;
-    padding: 0 8px 0 12px;
+    padding: 0 8px 0 18px;
     position: relative;
     z-index: 10;
 }
@@ -929,8 +929,8 @@ header {
     font-weight: 900;
     position: absolute;
     top: -18px;
-    left: 1px;
-    opacity: 0.1;
+    left: 7px;
+    opacity: 0.06;
 }
 .projects__nav-line {
     background-color: $black;
