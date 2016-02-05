@@ -950,7 +950,7 @@ header {
 .projects__nav-line {
     background-color: $black;
     position: absolute;
-    top: 49%;
+    top: calc(100% - 36px);
     left: 10%;
     width: 80%;
     height: 1px;
