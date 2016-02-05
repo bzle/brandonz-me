@@ -915,10 +915,10 @@ header {
 }
 .projects {
     float: left;
-    position: relative;
     white-space: nowrap;
 }
 .project {
+    position: relative;
     white-space: normal;
 }
 .project:first-child {
@@ -928,6 +928,8 @@ header {
     font-size: 90px;
     opacity: 0.1;
     position: absolute;
+    top: -50px;
+    left: -10px;
 }
 .project__title {
     margin-top: 0;
