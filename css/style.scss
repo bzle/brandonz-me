@@ -1089,6 +1089,9 @@ footer a {
 .math-grid__item.one-quarter {
     width: calc(#{$page-width} / 4);
 }
+.math-grid__item.one-sixth {
+    width: calc(#{$page-width} / 6);
+}
 .math-grid__item.one-twelfth {
     width: calc(#{$page-width} / 12);
 }
