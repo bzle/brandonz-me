@@ -943,6 +943,9 @@ header {
     height: 20px;
     width: 20px;
     border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 }
 .projects__nav-line {
     background-color: $black;
