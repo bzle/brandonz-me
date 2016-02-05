@@ -910,6 +910,7 @@ header {
 }
 .projects__nav {
     cursor: default;
+    margin: 120px 0 20px;
     text-align: center;
 }
 .project__link {
@@ -932,8 +933,6 @@ header {
 .project__img:last-child {
     margin-right: $edge-width * 2;
 }
-
-
 .project--infolinx .project__num,
 .project--infolinx .project__title,
 .project--infolinx .project__type {
@@ -954,8 +953,6 @@ header {
 .project--freestate .project__type {
     color: $freestate-red;
 }
-
-
 .project__num {
     font-size: 200px;
     font-weight: 900;
