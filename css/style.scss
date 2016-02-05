@@ -925,7 +925,7 @@ header {
     font-weight: 600;
     display: inline-block;
     margin: 0 16px;
-    padding: 0 8px 0 18px;
+    padding: 20px 8px 20px 18px;
     position: relative;
     z-index: 10;
 }
@@ -933,7 +933,7 @@ header {
     font-size: 38px;
     font-weight: 900;
     position: absolute;
-    top: -18px;
+    top: 2px;
     left: 7px;
     opacity: 0.06;
 }
@@ -945,7 +945,7 @@ header {
     width: 12px;
     border-radius: 10px;
     position: absolute;
-    bottom: -30px;
+    bottom: -10px;
     left: 45%;
 }
 .project__link:hover .project__indicator {
@@ -954,7 +954,7 @@ header {
 .projects__nav-line {
     background-color: $black;
     position: absolute;
-    top: calc(100% + 23px);
+    top: calc(100% + 3px);
     left: 10%;
     width: 80%;
     height: 1px;
