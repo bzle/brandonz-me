@@ -826,11 +826,13 @@ header {
 /*  -  -  -  -  *\
     $HERO
 \*  -  -  -  -  */
-.hero-section {
-    background-color: $gray;
+.page__home.hero-section {
     background-image: url(/img/me__photo.png);
     background-repeat: no-repeat;
     background-position: calc(100% + 120px) bottom;
+}
+.hero-section {
+    background-color: $gray;
     padding: 220px 0 80px;
     position: relative;
 }
