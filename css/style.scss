@@ -903,6 +903,7 @@ header {
 .projects-section {
     background-color: $gray;
     position: relative;
+    text-align: center;
 }
 .projects-container {
 	overflow-x: scroll;
@@ -910,6 +911,7 @@ header {
 }
 .projects__nav {
     cursor: default;
+    display: inline-block;
     margin: 100px 0 20px;
     position: relative;
     text-align: center;
@@ -931,6 +933,7 @@ header {
 }
 .projects {
     float: left;
+    text-align: left;
     white-space: nowrap;
 }
 .project {
