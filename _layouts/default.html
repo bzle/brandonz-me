@@ -70,6 +70,9 @@
         {% include footer.html %}
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            $('.copyright-year').html(new Date().getFullYear());
+        </script>
         {% assign contentArrayLength = contentArray | size %}{% if contentArrayLength > 1  %}{{ contentArray.last }}{% endif %}
     </body>
 </html>
