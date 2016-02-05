@@ -175,7 +175,7 @@ matt-img_path: /img/referral__matt.png
 </script>
 <script>
     $(document).ready(function(){
-        if (Modernizr.mq('(min-width: 767px)')) {
+        if($(window).width() >= 1024){
             var images_to_preload = "";
             images_to_preload += "<img src='/img/project__infolinx.png'>";
             $(".image-preloader").html(images_to_preload);
