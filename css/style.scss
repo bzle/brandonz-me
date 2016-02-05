@@ -787,6 +787,7 @@ $page-width: 100vw - ($edge-width * 2);
     $GENERAL
 \*  -  -  -  -  */
 body {
+    background-color: $gray;
     font-family: "Lato", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -832,7 +833,6 @@ header {
     background-position: calc(100% + 120px) bottom;
 }
 .hero-section {
-    background-color: $gray;
     padding: 220px 0 80px;
     position: relative;
 }
