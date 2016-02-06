@@ -786,8 +786,11 @@ $page-width: 100vw - ($edge-width * 2);
 /*  -  -  -  -  *\
     $GENERAL
 \*  -  -  -  -  */
-* {
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body {
     background-color: $gray;
