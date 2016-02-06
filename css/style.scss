@@ -848,7 +848,7 @@ header {
 }
 @media only screen and (min-width: 1440px) {
     .page__home .hero-section {
-        background-position: calc(100% - 120px) bottom;
+        background-position: calc(100% - #{$edge-width}) bottom;
     }
 }
 .hero-section {
@@ -888,7 +888,7 @@ header {
 }
 @media only screen and (min-width: 1440px) {
     .my-info {
-        right: 120px;
+        right: $edge-width;
     }
 }
 .my-name, .my-title {
