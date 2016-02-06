@@ -837,8 +837,13 @@ header {
     position: relative;
 }
 .hero-section h1 {
-    font-size: 64px;
+    font-size: 52px;
     font-weight: 300;
+}
+@media only screen and (min-width: 1080px) {
+    .hero-section h1 {
+        font-size: 64px;
+    }
 }
 .hero-section h1 + h1 {
     font-weight: bold;
@@ -1053,11 +1058,6 @@ footer:hover {
 footer a {
     color: $light-purple;
 }
-/*@media only screen and (min-width: 1080px) {
-    .osx-dock {
-        background-position: center 175px;
-    }
-}*/
 .footer__logo-container {
     position: absolute;
 }
