@@ -910,19 +910,19 @@ header {
 }
 .grid__item:last-child .referral {
     margin-bottom: 0;
-    max-width: 80px;
 }
 .referral__img {
     display: inline;
     float: left;
     padding: 0 10px 10px 0;
-    max-width: 120px;
+    max-width: 80px;
 }
 @media only screen and (min-width: 480px) {
     .referral__img {
         display: inline-block;
         float: none;
         width: 30%;
+        max-width: 120px;
     }
 }
 .referral__text {
