@@ -4,4 +4,4 @@ branches:
   only:
   - travis
 rvm:
-- 2.1.2 # version of `ruby'
+- 2.3.0
