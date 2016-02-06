@@ -983,7 +983,7 @@ header {
     position: relative;
     z-index: 10;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
     .project__link {
         margin: 0 6px;
         padding: 20px 8px 40px 18px;
@@ -995,12 +995,19 @@ header {
     }
 }
 .project__link span {
-    font-size: 38px;
+    font-size: 60px;
     font-weight: 900;
     position: absolute;
-    top: 2px;
-    left: 7px;
+    top: -14px;
+    left: 30%;
     opacity: 0.06;
+}
+@media only screen and (min-width: 480px) {
+    .project__link span {
+        font-size: 38px;
+        top: 2px;
+        left: 7px;
+    }
 }
 .project__indicator {
     background-color: $gray;
@@ -1011,7 +1018,12 @@ header {
     border-radius: 10px;
     position: absolute;
     bottom: 10px;
-    left: 45%;
+    left: 48%;
+}
+@media only screen and (min-width: 480px) {
+    .project__indicator {
+        left: 45%;
+    }
 }
 .project__link:hover .project__indicator {
     background-color: #bbb;
