@@ -910,7 +910,7 @@ header {
 .referral {
     margin-bottom: 80px;
 }
-.referral:last-chile {
+.grid__item:last-child .referral {
     margin-bottom: 0;
 }
 .referral__img {
