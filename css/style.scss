@@ -786,6 +786,12 @@ $page-width: 100vw - ($edge-width * 2);
 /*  -  -  -  -  *\
     $GENERAL
 \*  -  -  -  -  */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
     background-color: $gray;
     font-family: "Lato", sans-serif;
@@ -830,15 +836,47 @@ header {
 .page__home .hero-section {
     background-image: url(/img/me__photo.png);
     background-repeat: no-repeat;
-    background-position: calc(100% + 120px) bottom;
+    background-position: center bottom;
+    background-size: 320px;
+    min-height: 70vh;
+}
+@media only screen and (min-width: 480px) {
+    .page__home .hero-section {
+        background-position: calc(100% + 120px) bottom;
+        background-size: initial;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .page__home .hero-section {
+        background-position: calc(100% - #{$edge-width}) bottom;
+    }
 }
 .hero-section {
     padding: 220px 0 80px;
     position: relative;
 }
+@media only screen and (max-width: 480px) {
+    .page__home .hero-section {
+        padding: 220px 0 450px;
+    }
+}
 .hero-section h1 {
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 300;
+}
+@media only screen and (min-width: 480px) {
+    .hero-section h1 {
+    }
+}
+@media only screen and (min-width: 768px) {
+    .hero-section h1 {
+        font-size: 52px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .hero-section h1 {
+        font-size: 64px;
+    }
 }
 .hero-section h1 + h1 {
     font-weight: bold;
@@ -847,6 +885,11 @@ header {
     position: absolute;
     right: 0;
     bottom: 120px;
+}
+@media only screen and (min-width: 1440px) {
+    .my-info {
+        right: $edge-width;
+    }
 }
 .my-name, .my-title {
     background-color: $gray;
@@ -872,18 +915,39 @@ header {
     position: relative;
 }
 .referral {
+    margin-bottom: 80px;
+}
+.grid__item:last-child .referral {
+    margin-bottom: 0;
 }
 .referral__img {
-    display: inline-block;
-    width: 30%;
-    max-width: 120px;
+    display: inline;
+    float: left;
+    padding: 0 12px 2px 0;
+    max-width: 100px;
+}
+@media only screen and (min-width: 480px) {
+    .referral__img {
+        display: inline-block;
+        float: none;
+        width: 30%;
+        max-width: 120px;
+    }
 }
 .referral__text {
-    display: inline-block;
+    display: inline;
     line-height: 24px;
-    margin-left: 5%;
-    width: 60%;
-    vertical-align: top;
+    
+}
+@media only screen and (min-width: 480px) {
+    .referral__text {
+        display: inline-block;
+        margin-left: 5%;
+        position: relative;
+        top: -6px;
+        width: 60%;
+        vertical-align: top;
+    }
 }
 .referral__quote {
     margin-top: 0;
@@ -923,18 +987,36 @@ header {
 .project__link {
     font-weight: 600;
     display: inline-block;
-    margin: 0 16px;
-    padding: 20px 8px 40px 18px;
+    margin: 0;
+    padding: 20px 4px 40px;
     position: relative;
     z-index: 10;
 }
+@media only screen and (min-width: 480px) {
+    .project__link {
+        margin: 0 6px;
+        padding: 20px 8px 40px 18px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .project__link {
+        margin: 0 16px;
+    }
+}
 .project__link span {
-    font-size: 38px;
+    font-size: 60px;
     font-weight: 900;
     position: absolute;
-    top: 2px;
-    left: 7px;
+    top: -14px;
+    left: 30%;
     opacity: 0.06;
+}
+@media only screen and (min-width: 480px) {
+    .project__link span {
+        font-size: 38px;
+        top: 2px;
+        left: 7px;
+    }
 }
 .project__indicator {
     background-color: $gray;
@@ -945,7 +1027,12 @@ header {
     border-radius: 10px;
     position: absolute;
     bottom: 10px;
-    left: 45%;
+    left: 48%;
+}
+@media only screen and (min-width: 480px) {
+    .project__indicator {
+        left: 45%;
+    }
 }
 .project__link:hover .project__indicator {
     background-color: #bbb;
@@ -1044,22 +1131,43 @@ footer {
     background-position: center calc(100% + 175px);
     background-repeat: no-repeat;
     color: $light-purple;
-    padding: 50px 0 130px;
+    padding: 70px 0 80px;
     transition: all .5s ease 0s;
 }
-footer:hover {
-    background-position: center bottom;
+@media only screen and (min-width: 480px) {
+    footer {
+        padding: 50px 0 80px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    footer {
+        padding: 50px 0 130px;
+    }
+    footer:hover {
+        background-position: center bottom;
+    }
 }
 footer a {
     color: $light-purple;
 }
-/*@media only screen and (min-width: 1080px) {
-    .osx-dock {
-        background-position: center 175px;
-    }
-}*/
 .footer__logo-container {
     position: absolute;
+}
+.footer__skills {
+    margin-top: 175px;
+}
+@media only screen and (min-width: 480px) {
+    .footer__skills {
+        margin-top: 0;
+    }
+}
+.skills {
+    width: 95%;
+}
+@media only screen and (min-width: 480px) {
+    .skills {
+        width: 100%;
+    }
 }
 .skill p {
     margin-bottom: 6px;
@@ -1112,6 +1220,24 @@ footer a {
     width: 30px;
     margin: 12px 0;
 }
+.footer__contact-social {
+    margin-top: 60px;
+}
+.footer__legal {
+    margin-top: 50px;
+}
+@media only screen and (min-width: 480px) {
+    .footer__legal {
+        margin-top: 60px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .footer__contact-social,
+    .footer__legal {
+        margin-top: 0;
+    }
+}
+
 /*  -  -  -  -  *\
     $EXTRA
 \*  -  -  -  -  */
@@ -1121,6 +1247,12 @@ footer a {
     left: 170%;
     text-decoration: none;
     white-space: nowrap;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    footer .logo__alert-box {
+        top: 35%;
+        left: 120%;
+    }
 }
 .logo__alert {
     background: $orange;
@@ -1190,6 +1322,42 @@ footer a {
 .math-grid__item.one-twelfth {
     width: calc(#{$page-width} / 12);
 }
+@media only screen and (max-width: 479px) {
+    .math-grid__item.math--lap-sm--two-thirds {
+        width: calc(#{$page-width} / 3 * 2);
+    }
+    .math-grid__item.math--lap-sm--one-half {
+        width: calc(#{$page-width} / 2);
+    }
+    .palm--hidden {
+        display: none;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .math-grid__item.lap-md--one-half {
+        width: calc(#{$page-width} / 2);
+    }
+    .math-grid__item.lap-md--one-third {
+        width: calc(#{$page-width} / 3);
+    }
+    .lap-md--hidden {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .math-grid__item.lap-lg--one-third {
+        width: calc(#{$page-width} / 3);
+    }
+    .math-grid__item.lap-lg--one-quarter {
+        width: calc(#{$page-width} / 4);
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .math-grid__item.portable--one-third {
+        width: calc(#{$page-width} / 3);
+    }
+}
+
 
 /*------------------------------------*\
     $STICKY-FOOTER
