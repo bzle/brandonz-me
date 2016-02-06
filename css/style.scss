@@ -1139,6 +1139,14 @@ footer a {
 .footer__logo-container {
     position: absolute;
 }
+.skills {
+    width: 95%;
+}
+@media only screen and (min-width: 480px) {
+    .skills {
+        width: 100%;
+    }
+}
 .skill p {
     margin-bottom: 6px;
 }
