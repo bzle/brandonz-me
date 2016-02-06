@@ -978,10 +978,16 @@ header {
 .project__link {
     font-weight: 600;
     display: inline-block;
-    margin: 0 6px;
-    padding: 20px 8px 40px 18px;
+    margin: 0;
+    padding: 20px 4px 40px;
     position: relative;
     z-index: 10;
+}
+@media only screen and (min-width: 768px) {
+    .project__link {
+        margin: 0 6px;
+        padding: 20px 8px 40px 18px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .project__link {
