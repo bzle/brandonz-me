@@ -1267,15 +1267,24 @@ footer a {
     .math-grid__item.lap-sm--one-whole {
         width: calc(#{$page-width} / 3 * 2);
     }
+    .math-grid__item.lap-sm--one-half {
+        width: calc(#{$page-width} / 2);
+    }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .math-grid__item.lap-md--one-half {
         width: calc(#{$page-width} / 2);
     }
+    .math-grid__item.lap-md--one-third {
+        width: calc(#{$page-width} / 3);
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .math-grid__item.lap-lg--one-third {
         width: calc(#{$page-width} / 3);
+    }
+    .math-grid__item.lap-lg--one-quarter {
+        width: calc(#{$page-width} / 4);
     }
 }
 @media only screen and (max-width: 1023px) {
@@ -1283,6 +1292,7 @@ footer a {
         width: calc(#{$page-width} / 3);
     }
 }
+
 
 /*------------------------------------*\
     $STICKY-FOOTER
