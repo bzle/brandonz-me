@@ -1297,6 +1297,9 @@ footer a {
         width: calc(#{$page-width} / 3);
     }
 }
+.lap-md--hidden, .palm--hidden {
+    display: none;
+}
 
 
 /*------------------------------------*\
