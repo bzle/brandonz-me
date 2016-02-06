@@ -1,5 +1,5 @@
 language: ruby
-script: rake travis
+script: bundle exec rake build
 branches:
   only:
   - travis
