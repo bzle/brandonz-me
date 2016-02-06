@@ -1145,7 +1145,7 @@ footer a {
     position: absolute;
 }
 .footer__skills {
-    margin-top: 160px;
+    margin-top: 175px;
 }
 @media only screen and (min-width: 480px) {
     .footer__skills {
@@ -1211,9 +1211,16 @@ footer a {
     width: 30px;
     margin: 12px 0;
 }
-.footer__contact-social,
-.footer__legal {
+.footer__contact-social {
     margin-top: 60px;
+}
+.footer__legal {
+    margin-top: 50px;
+}
+@media only screen and (min-width: 480px) {
+    .footer__legal {
+        margin-top: 60px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .footer__contact-social,
@@ -1221,12 +1228,7 @@ footer a {
         margin-top: 0;
     }
 }
-.footer__contact-social {
-    
-}
-.footer__legal {
-    
-}
+
 /*  -  -  -  -  *\
     $EXTRA
 \*  -  -  -  -  */
