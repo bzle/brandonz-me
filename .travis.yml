@@ -1,4 +1,7 @@
 language: ruby
 script: bundle exec rake build
+branches:
+  only:
+  - travis
 rvm:
 - 2.1.2 # version of `ruby'
