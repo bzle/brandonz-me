@@ -1,7 +1,5 @@
 language: ruby
-rvm:
-- 2.3.0
-script: jekyll build --destination /home/travis/build/bzle/brandonz-me/_deploy
+script: jekyll build
 branches:
   only:
   - travis
