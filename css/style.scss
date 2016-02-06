@@ -859,11 +859,9 @@ header {
 .hero-section h1 {
     font-size: 40px;
     font-weight: 300;
-    text-align: center;
 }
 @media only screen and (min-width: 480px) {
     .hero-section h1 {
-        text-align: left;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -915,8 +913,12 @@ header {
 }
 .referral__img {
     display: inline-block;
-    width: 30%;
     max-width: 120px;
+}
+@media only screen and (min-width: 480px) {
+    .referral__img {
+        width: 30%;
+    }
 }
 .referral__text {
     display: inline-block;
@@ -924,8 +926,12 @@ header {
     margin-left: 5%;
     position: relative;
     top: -6px;
-    width: 60%;
     vertical-align: top;
+}
+@media only screen and (min-width: 480px) {
+    .referral__text {
+        width: 60%;
+    }
 }
 .referral__quote {
     margin-top: 0;
