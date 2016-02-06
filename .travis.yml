@@ -1,4 +1,4 @@
 language: ruby
-script: "./build.sh" # execute this script on each commit
+script: bundle exec rake build
 rvm:
 - 2.1.2 # version of `ruby'
