@@ -840,12 +840,25 @@ header {
     min-height: 70vh;
 }
 .hero-section {
-    padding: 220px 0 80px;
+    padding: 220px 0;
     position: relative;
 }
+@media only screen and (min-width: 480px) {
+    .hero-section {
+        padding: 220px 0 80px;
+        position: relative;
+    }
+}
 .hero-section h1 {
-    font-size: 40px;
+    font-size: 52px;
     font-weight: 300;
+    text-align: center;
+}
+@media only screen and (min-width: 480px) {
+    .hero-section h1 {
+        font-size: 40px;
+        text-align: left;
+    }
 }
 @media only screen and (min-width: 768px) {
     .hero-section h1 {
