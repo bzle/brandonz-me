@@ -1190,6 +1190,22 @@ footer a {
     width: 30px;
     margin: 12px 0;
 }
+.footer__contact-social,
+.footer__legal {
+    margin-top: 50px;
+}
+@media only screen and (min-width: 768px) {
+    .footer__contact-social,
+    .footer__legal {
+        margin-top: 0;
+    }
+}
+.footer__contact-social {
+    
+}
+.footer__legal {
+    
+}
 /*  -  -  -  -  *\
     $EXTRA
 \*  -  -  -  -  */
