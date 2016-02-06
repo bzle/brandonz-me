@@ -1264,10 +1264,10 @@ footer a {
     width: calc(#{$page-width} / 12);
 }
 @media only screen and (max-width: 479px) {
-    .math--lap-sm--two-thirds {
+    .math-grid__item.math--lap-sm--two-thirds {
         width: calc(#{$page-width} / 3 * 2);
     }
-    .math--lap-sm--one-half {
+    .math-grid__item.math--lap-sm--one-half {
         width: calc(#{$page-width} / 2);
     }
 }
