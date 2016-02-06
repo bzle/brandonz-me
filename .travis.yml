@@ -1,9 +1,9 @@
-language: node_js
-node_js:
-  - "0.11"
-# whitelist
+language: ruby
+rvm:
+- 2.2
+script: jekyll build
 branches:
   only:
-    - travis
+  - travis
 after_success:
-  - ./deploy.sh
+    cd ./_site && find . -type f -exec curl -u $FTP_SUSER:$FTP_PASS --ftp-create-dirs -T {} ftp://brandonious.com/{}
