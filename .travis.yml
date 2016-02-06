@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.3.0
-script: jekyll build
+script: jekyll build --destination _deploy
 branches:
   only:
   - travis
