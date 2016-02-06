@@ -1122,11 +1122,16 @@ footer {
     background-position: center calc(100% + 175px);
     background-repeat: no-repeat;
     color: $light-purple;
-    padding: 50px 0 130px;
+    padding: 50px 0 80px;
     transition: all .5s ease 0s;
 }
-footer:hover {
-    background-position: center bottom;
+@media only screen and (min-width: 1024px) {
+    footer {
+        padding: 50px 0 130px;
+    }
+    footer:hover {
+        background-position: center bottom;
+    }
 }
 footer a {
     color: $light-purple;
