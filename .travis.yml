@@ -6,4 +6,4 @@ branches:
   only:
   - travis
 after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASS ftp://brandonious.com"
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASS ftp.brandonious.com"
