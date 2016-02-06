@@ -1263,6 +1263,11 @@ footer a {
 .math-grid__item.one-twelfth {
     width: calc(#{$page-width} / 12);
 }
+@media only screen and (max-width: 479px) {
+    .math-grid__item.lap-sm--two-thirds {
+        width: calc(#{$page-width} / 3 * 2);
+    }
+}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .math-grid__item.lap-md--one-half {
         width: calc(#{$page-width} / 2);
