@@ -1139,6 +1139,14 @@ footer a {
 .footer__logo-container {
     position: absolute;
 }
+.footer__skills {
+    margin-top: 160px;
+}
+@media only screen and (min-width: 480px) {
+    .footer__skills {
+        margin-top: 0;
+    }
+}
 .skills {
     width: 95%;
 }
@@ -1205,14 +1213,6 @@ footer a {
 @media only screen and (min-width: 768px) {
     .footer__contact-social,
     .footer__legal {
-        margin-top: 0;
-    }
-}
-.footer__skills {
-    margin-top: 60px;
-}
-@media only screen and (min-width: 480px) {
-    .footer__skills {
         margin-top: 0;
     }
 }
