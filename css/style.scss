@@ -786,6 +786,9 @@ $page-width: 100vw - ($edge-width * 2);
 /*  -  -  -  -  *\
     $GENERAL
 \*  -  -  -  -  */
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: $gray;
     font-family: "Lato", sans-serif;
