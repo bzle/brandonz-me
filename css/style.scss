@@ -3,6 +3,7 @@
 
 @charset "UTF-8";
 
+
 /*------------------------------------*\
 
     [Table of contents]
@@ -30,62 +31,6 @@
 \*------------------------------------*/
 
 
-/*  -  -  -  -  *\
-    $VARIABLES
-\*  -  -  -  -  */
-$purple: #270559;
-$light-purple: #8850E7;
-$dark-purple: #170633;
-$orange: #F87F02;
-$teal: #00B174;
-$gray: #F0F0F0;
-$black: #222;
-
-$infolinx-orange: #ff7a1f;
-$trible-purple: #413064;
-$bravo-gold: #7F7641;
-$freestate-red: #D24036;
-
-$edge-width: 6vw;
-$page-width: 100vw - ($edge-width * 2);
-
-
-/*------------------------------------*\
-    $MATH-GRID
-\*------------------------------------*/
-/**
- * 1. Cause columns to stack side-by-side.
- * 2. Space columns apart.
- * 3. Align columns to the tops of each other.
- * 4. Full-width unless told to behave otherwise.
- * 5. Required to combine fluid widths and fixed gutters.
- */
-.math-grid__item {
-    display:inline-block;           /* [1] */
-    padding-left:$gutter;           /* [2] */
-    vertical-align:top;             /* [3] */
-    @if $mobile-first {
-        width:100%;                 /* [4] */
-    }
-    -webkit-box-sizing:border-box;  /* [5] */
-       -moz-box-sizing:border-box;  /* [5] */
-            box-sizing:border-box;  /* [5] */
-    font-size: 14px;                // inline-block fix
-    @if not $use-markup-fix {
-        letter-spacing:normal;
-        word-spacing:normal;
-    }
-}
-
-.math-grid__item.one-quarter {
-    width: calc(#{$page-width} / 4);
-}
-.math-grid__item.one-sixth {
-    width: calc(#{$page-width} / 6);
-}
-.math-grid__item.one-twelfth {
-    width: calc(#{$page-width} / 12);
-}
 
 
 
@@ -820,6 +765,25 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 \*------------------------------------*/
 
 /*  -  -  -  -  *\
+    $VARIABLES
+\*  -  -  -  -  */
+$purple: #270559;
+$light-purple: #8850E7;
+$dark-purple: #170633;
+$orange: #F87F02;
+$teal: #00B174;
+$gray: #F0F0F0;
+$black: #222;
+
+$infolinx-orange: #ff7a1f;
+$trible-purple: #413064;
+$bravo-gold: #7F7641;
+$freestate-red: #D24036;
+
+$edge-width: 6vw;
+$page-width: 100vw - ($edge-width * 2);
+
+/*  -  -  -  -  *\
     $GENERAL
 \*  -  -  -  -  */
 html {
@@ -1261,6 +1225,50 @@ footer a {
 \*  -  -  -  -  */
 .page__404 h1 {
     text-align: center;
+}
+
+/*------------------------------------*\
+    $MATH-GRID
+\*------------------------------------*/
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+.math-grid__item {
+    display:inline-block;           /* [1] */
+    padding-left:$gutter;           /* [2] */
+    vertical-align:top;             /* [3] */
+    @if $mobile-first {
+        width:100%;                 /* [4] */
+    }
+    -webkit-box-sizing:border-box;  /* [5] */
+       -moz-box-sizing:border-box;  /* [5] */
+            box-sizing:border-box;  /* [5] */
+    font-size: 14px;                // inline-block fix
+    @if not $use-markup-fix {
+        letter-spacing:normal;
+        word-spacing:normal;
+    }
+}
+
+.math-grid__item.one-quarter {
+    width: calc(#{$page-width} / 4);
+}
+.math-grid__item.one-sixth {
+    width: calc(#{$page-width} / 6);
+}
+.math-grid__item.one-twelfth {
+    width: calc(#{$page-width} / 12);
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .math-grid__item.portable--one-third {
+        width: calc(#{$page-width} / 3);
+    }
 }
 
 /*------------------------------------*\
