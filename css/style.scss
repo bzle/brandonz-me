@@ -1239,6 +1239,12 @@ footer a {
     text-decoration: none;
     white-space: nowrap;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo__alert-box {
+        top: 35%;
+        left: 150%;
+    }
+}
 .logo__alert {
     background: $orange;
     box-sizing: border-box;
