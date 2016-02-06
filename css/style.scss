@@ -1200,6 +1200,14 @@ footer a {
         margin-top: 0;
     }
 }
+.footer__skills {
+    margin-top: 0;
+}
+@media only screen and (min-width: 480px) {
+    .footer__skills {
+        margin-top: 60px;
+    }
+}
 .footer__contact-social {
     
 }
