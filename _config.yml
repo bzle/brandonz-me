@@ -1,2 +1,4 @@
 name: Brandon Z
 split: <!--split-->
+gems:
+  - jekyll-sitemap
