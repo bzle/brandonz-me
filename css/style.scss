@@ -912,25 +912,29 @@ header {
     margin-bottom: 0;
 }
 .referral__img {
-    display: inline-block;
+    display: inline;
+    padding: 0 10px 10px 0;
     max-width: 120px;
 }
 @media only screen and (min-width: 480px) {
     .referral__img {
+        display: inline-block;
         width: 30%;
     }
 }
 .referral__text {
-    display: inline-block;
+    display: inline;
     line-height: 24px;
-    margin-left: 5%;
-    position: relative;
-    top: -6px;
-    vertical-align: top;
+    
 }
 @media only screen and (min-width: 480px) {
     .referral__text {
+        display: inline-block;
+        margin-left: 5%;
+        position: relative;
+        top: -6px;
         width: 60%;
+        vertical-align: top;
     }
 }
 .referral__quote {
