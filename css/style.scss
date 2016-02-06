@@ -908,6 +908,10 @@ header {
     position: relative;
 }
 .referral {
+    margin-bottom: 80px;
+}
+.referral:last-chile {
+    margin-bottom: 0;
 }
 .referral__img {
     display: inline-block;
