@@ -1,7 +1,11 @@
 language: ruby
-script: bundle exec rake build
+rvm:
+- 2.3.0
+script: bundle exec jekyll build
 branches:
   only:
   - travis
-rvm:
-- 2.3.0
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
