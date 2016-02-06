@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.3.0
+script: bundle exec jekyll build
+branches:
+  only:
+  - travis
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
