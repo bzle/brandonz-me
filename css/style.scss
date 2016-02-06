@@ -846,6 +846,11 @@ header {
         background-size: initial;
     }
 }
+@media only screen and (min-width: 1440px) {
+    .page__home .hero-section {
+        background-position: calc(100% - 120px) bottom;
+    }
+}
 .hero-section {
     padding: 220px 0 80px;
     position: relative;
@@ -880,6 +885,11 @@ header {
     position: absolute;
     right: 0;
     bottom: 120px;
+}
+@media only screen and (min-width: 1440px) {
+    .my-info {
+        right: 120px;
+    }
 }
 .my-name, .my-title {
     background-color: $gray;
