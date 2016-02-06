@@ -1122,8 +1122,13 @@ footer {
     background-position: center calc(100% + 175px);
     background-repeat: no-repeat;
     color: $light-purple;
-    padding: 50px 0 80px;
+    padding: 70px 0 80px;
     transition: all .5s ease 0s;
+}
+@media only screen and (min-width: 480px) {
+    footer {
+        padding: 50px 0 80px;
+    }
 }
 @media only screen and (min-width: 1024px) {
     footer {
