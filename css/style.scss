@@ -1267,7 +1267,9 @@ footer a {
     .math-grid__item.lap-sm--one-whole {
         width: calc(#{$page-width} / 3 * 2);
     }
-    .math-grid__item.lap-sm--one-half {
+}
+.math-grid__item.lap-sm--one-half {
+    @media only screen and (max-width: 479px) {
         width: calc(#{$page-width} / 2);
     }
 }
