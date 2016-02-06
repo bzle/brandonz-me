@@ -843,7 +843,7 @@ header {
 @media only screen and (min-width: 480px) {
     .page__home .hero-section {
         background-position: calc(100% + 120px) bottom;
-        background-size: 100%;
+        background-size: initial;
     }
 }
 .hero-section {
