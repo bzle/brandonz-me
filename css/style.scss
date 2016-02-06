@@ -836,8 +836,13 @@ header {
 .page__home .hero-section {
     background-image: url(/img/me__photo.png);
     background-repeat: no-repeat;
-    background-position: calc(100% + 120px) bottom;
+    background-position: center bottom;
     min-height: 70vh;
+}
+@media only screen and (min-width: 480px) {
+    .page__home .hero-section {
+        background-position: calc(100% + 120px) bottom;
+    }
 }
 .hero-section {
     padding: 220px 0;
