@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.3.0
-script: bundle exec jekyll build
+script: jekyll build
 branches:
   only:
   - travis
