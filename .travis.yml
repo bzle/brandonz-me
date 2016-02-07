@@ -6,4 +6,4 @@ branches:
   only:
   - travis
 after_success:
-    cd ./_site && find -type f -exec curl -u $FTP_USER_OLD:$FTP_PASS_OLD --ftp-create-dirs -T {} ftp://brandonious.com{} \;
+    cd ./_site && lftp -e "mirror -R {} {}" -u {$FTP_USER_OLD},{$FTP_PASS_OLD} {ftp://brandonious.com}
