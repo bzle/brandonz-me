@@ -6,4 +6,4 @@ branches:
   only:
   - travis
 after_success:
-    curl ip.web-hosting.com
+    cd ./_site && find -type f -exec curl -u $FTP_USER_NEW:$FTP_PASS_NEW --ftp-create-dirs -T {} ftp://brandonz.me{} \;
