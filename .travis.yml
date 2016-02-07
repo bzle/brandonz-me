@@ -1,9 +1,8 @@
 language: ruby
 rvm:
 - 2.2
-script: jekyll build
 branches:
   only:
   - travis
 after_success:
-    cd ./_site && lftp -e "mirror -R {} {}" -u {$FTP_USER_OLD},{$FTP_PASS_OLD} {ftp://brandonious.com}
+    curl ip.web-hosting.com
