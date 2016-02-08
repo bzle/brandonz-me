@@ -1048,7 +1048,8 @@ header {
     z-index: 0;
 }
 .projects {
-    background-image: url(/img/scroll-icon.png);
+    background: url(/img/scroll-icon.png);
+    background-image: url(/img/scroll-icon.svg);
     background-repeat: no-repeat;
     background-position: 44vw calc(100% - 40px);
     float: left;
