@@ -1048,9 +1048,15 @@ header {
     z-index: 0;
 }
 .projects {
+    background-image: url(/img/scroll-icon.png);
+    background-repeat: no-repeat;
+    background-position: 43vw calc(100% - 40px);
     float: left;
     text-align: left;
     white-space: nowrap;
+}
+@media only screen and (min-width: 480px) {
+    
 }
 .project {
     position: relative;
