@@ -975,7 +975,7 @@ header {
 }
 .projects-container {
 	overflow-x: scroll;
-	padding: 120px 0;
+	padding: 120px 0 60px;
 }
 .projects__nav {
     cursor: default;
@@ -1052,6 +1052,7 @@ header {
     background-repeat: no-repeat;
     background-position: 43vw calc(100% - 40px);
     float: left;
+    padding-bottom: 60px;
     text-align: left;
     white-space: nowrap;
 }
