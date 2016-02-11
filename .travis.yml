@@ -6,4 +6,4 @@ branches:
   only:
   - travis
 after_success:
-    cd ./_site && find -type f -exec curl -u $FTP_USER_BRANDONZ_2:$FTP_PASS_BRANDONZ_2 --ftp-create-dirs -T --verbose {} ftp://brandonz.me {} \;
+    cd ./_site && find -type f -exec curl --verbose -u $FTP_USER_BRANDONZ_2:$FTP_PASS_BRANDONZ_2 --ftp-create-dirs -T {} ftp://brandonz.me {} \;
