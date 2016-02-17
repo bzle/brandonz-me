@@ -1217,8 +1217,9 @@ footer a {
     width: 70%;
 }
 .contact-social__link {
-    display: block;
-    padding: 10px 0;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 10px 5px 0;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -1227,6 +1228,11 @@ footer a {
     margin-right: 10px;
     position: relative;
     top: 1px;
+}
+.contact-social__link,
+.contact-social__spacer {
+    float: left;
+    clear: both;
 }
 .contact-social__spacer {
     background-color: $light-purple;
