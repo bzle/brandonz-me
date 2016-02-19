@@ -1135,16 +1135,19 @@ header {
 .project__img:focus {
     outline: 0;
 }
-.mouse {
-    border: 2px solid #B9B9B9;
-    width: 22px;
-    height: 38px;
-    border-radius: 11px;
+.mouse-icon {
     position: absolute;
     bottom: 100px;
     left: calc(50% - 26px);
 }
-.mouse__wheel {
+.mouse-icon__body {
+    border: 2px solid #B9B9B9;
+    border-radius: 11px;
+    width: 22px;
+    height: 38px;
+    position: relative;
+}
+.mouse-icon__wheel {
     background-color: #B9B9B9;
     width: 4px;
     height: 4px;
@@ -1153,7 +1156,7 @@ header {
     top: 9px;
     left: calc(50% - 2px);
 }
-.mouse .fa {
+.mouse-icon__arrow {
     color: #B9B9B9;
     font-size: 24px;
     font-weight: bold;
@@ -1161,8 +1164,11 @@ header {
     top: calc(50% - 13px);
     right: -24px;
 }
-.mouse .fa + .fa {
+.mouse-icon__arrow + .mouse-icon__arrow {
     right: -44px;
+}
+.mouse-icon__message {
+    
 }
 
 /*  -  -  -  -  *\
