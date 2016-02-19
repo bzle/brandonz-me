@@ -1142,6 +1142,9 @@ header {
     left: calc(50vw - 26px);
     text-align: center;
 }
+.mouse-icon:hover {
+    cursor: default;
+}
 .mouse-icon__body {
     border: 2px solid;
     border-color: inherit;
