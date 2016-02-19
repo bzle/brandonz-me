@@ -118,6 +118,15 @@ matt-img_path: /img/referral__matt.png
                     </div>
                 </a>
             </div>
+            <div class="mouse-icon">
+                <div class="mouse-icon__body">
+                    <div class="mouse-icon__wheel"></div>
+                </div>
+                <i class="mouse-icon__arrow fa fa-angle-right"></i>
+                <i class="mouse-icon__arrow fa fa-angle-right"></i>
+                <br>
+                <div class="mouse-icon__message">scroll&nbsp;&nbsp;or&nbsp;&nbsp;drag</div>
+            </div>
         </div>
     </div>
 </section>
@@ -126,6 +135,7 @@ matt-img_path: /img/referral__matt.png
 
 <!--split-->
 
+<!-- Projects - Horizontal Scroll Nav -->
 <script type="text/javascript">
 	$( document ).ready(function() {
         $(".project__link").stop().hover(function() {
@@ -149,6 +159,8 @@ matt-img_path: /img/referral__matt.png
         });
 	});
 </script>
+
+<!-- Projects - Horizontal Drag-to-Scroll -->
 <script type="text/javascript">
 	$( document ).ready(function() {
         var x,y,top,left,down;
@@ -167,8 +179,6 @@ matt-img_path: /img/referral__matt.png
 		        var newX=e.pageX;
 		        var newY=e.pageY;
 		        
-		        //console.log(y+", "+newY+", "+top+", "+(top+(newY-y)));
-		        
 		        $(".projects-container").scrollTop(top-newY+y);    
 		        $(".projects-container").scrollLeft(left-newX+x);    
 		    }
@@ -177,22 +187,20 @@ matt-img_path: /img/referral__matt.png
 		$("body").mouseup(function(e){down=false;});
 	});
 </script>
-<!-- Add venobox -->
+
+<!-- Projects - Lightbox -->
 <link rel="stylesheet" href="/js/ext__venobox/venobox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="/js/ext__venobox/venobox.min.js"></script>
 <script>
     $(document).ready(function(){
         $('.project__img').venobox({
-            // framewidth: '400px',        // default: ''
-            // frameheight: '300px',       // default: ''
-            // border: '10px',             // default: '0'
-            // bgcolor: '#5dff5e',         // default: '#fff'
-            // titleattr: 'data-title',    // default: 'title'
-            numeratio: true,            // default: false
-            infinigall: true            // default: false
+            numeratio: true,
+            infinigall: true
         });
     });
 </script>
+
+<!-- Projects - Preload Full Size Images -->
 <script>
     $(document).ready(function(){
         if($(window).width() >= 1024){

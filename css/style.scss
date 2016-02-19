@@ -1059,23 +1059,11 @@ header {
     z-index: 0;
 }
 .projects {
-    background-image: url(/img/scroll-icon.png);
-    background-repeat: no-repeat;
-    background-position: 44vw calc(100% - 40px);
     float: left;
     padding-bottom: 60px;
+    position: relative;
     text-align: left;
     white-space: nowrap;
-}
-@media only screen and (min-width: 768px) {
-    .projects {
-        background-position: 49vw calc(100% - 40px);
-    }
-}
-@media only screen and (min-width: 1024px) {
-    .projects {
-        background-position: 50vw calc(100% - 40px);
-    }
 }
 .project {
     position: relative;
@@ -1146,6 +1134,60 @@ header {
 }
 .project__img:focus {
     outline: 0;
+}
+.mouse-icon {
+    color: #CCC;
+    position: absolute;
+    bottom: 50px;
+    left: calc(50vw - 50px);
+    text-align: center;
+}
+.mouse-icon:hover {
+    cursor: default;
+}
+.mouse-icon__body {
+    border: 2px solid;
+    border-color: inherit;
+    border-radius: 11px;
+    display: inline-block;
+    margin-right: 8px;
+    width: 22px;
+    height: 38px;
+    position: relative;
+}
+.mouse-icon__wheel {
+    background-color: #CCC;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 9px;
+    left: calc(50% - 2px);
+}
+.mouse-icon__arrow.fa {
+    color: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 8px;
+    position: relative;
+    top: -11px;
+}
+.mouse-icon__arrow + .mouse-icon__arrow {
+    margin-right: 0;
+}
+.mouse-icon__message {
+    color: inherit;
+    font-weight: 600;
+    letter-spacing: 0;
+    position: relative;
+    top: 4px;
+    opacity: 0;
+    transition: all .25s ease 0s;
+    white-space: nowrap;
+}
+.mouse-icon:hover .mouse-icon__message {
+    opacity: 1;
+    top: 8px;
 }
 
 /*  -  -  -  -  *\
