@@ -1168,6 +1168,13 @@ header {
 }
 .mouse .fa {
     color: #B9B9B9;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: calc(50% - 13px);
+}
+.mouse .fa + .fa {
+    right: -44px;
 }
 
 /*  -  -  -  -  *\
