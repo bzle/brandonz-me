@@ -1136,7 +1136,7 @@ header {
     outline: 0;
 }
 .mouse-icon {
-    color: #B9B9B9;
+    color: #CCC;
     position: absolute;
     bottom: 50px;
     left: calc(50vw - 26px);
@@ -1156,7 +1156,7 @@ header {
     position: relative;
 }
 .mouse-icon__wheel {
-    background-color: #B9B9B9;
+    background-color: #CCC;
     width: 4px;
     height: 4px;
     border-radius: 2px;
@@ -1186,7 +1186,7 @@ header {
     white-space: nowrap;
 }
 .mouse-icon:hover .mouse-icon__message {
-    opacity: 0.8;
+    opacity: 1;
     top: 8px;
 }
 
