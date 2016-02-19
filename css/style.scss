@@ -1059,29 +1059,12 @@ header {
     z-index: 0;
 }
 .projects {
-    /*
-    background-image: url(/img/scroll-icon.png);
-    background-repeat: no-repeat;
-    background-position: 44vw calc(100% - 40px);
-    */
     float: left;
     padding-bottom: 60px;
     position: relative;
     text-align: left;
     white-space: nowrap;
 }
-/*
-@media only screen and (min-width: 768px) {
-    .projects {
-        background-position: 49vw calc(100% - 40px);
-    }
-}
-@media only screen and (min-width: 1024px) {
-    .projects {
-        background-position: 50vw calc(100% - 40px);
-    }
-}
-*/
 .project {
     position: relative;
     white-space: normal;
