@@ -1154,8 +1154,8 @@ header {
     height: 38px;
     border-radius: 11px;
     position: absolute;
-    bottom: 30px;
-    left: 40%;
+    bottom: 100px;
+    left: calc(50% -40px);
 }
 .mouse__wheel {
     background-color: #B9B9B9;
