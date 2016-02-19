@@ -1149,22 +1149,22 @@ header {
     outline: 0;
 }
 .mouse {
-    border: 1px solid black;
-    width: 20px;
-    height: 36px;
-    border-radius: 10px;
+    border: 1px solid #B9B9B9;
+    width: 22px;
+    height: 38px;
+    border-radius: 11px;
     position: absolute;
     bottom: 30px;
     left: 40%;
 }
 .mouse__wheel {
-    background-color: black;
-    width: 2px;
-    height: 2px;
+    background-color: #B9B9B9;
+    width: 4px;
+    height: 4px;
     border-radius: 2px;
     position: absolute;
     top: 9px;
-    left: 9px;
+    left: calc(50% - 2px);
 }
 
 /*  -  -  -  -  *\
