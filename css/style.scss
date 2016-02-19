@@ -1147,6 +1147,7 @@ header {
     border-color: inherit;
     border-radius: 11px;
     display: inline-block;
+    margin-right: 10px;
     width: 22px;
     height: 38px;
     position: relative;
@@ -1164,13 +1165,15 @@ header {
     color: inherit;
     font-size: 24px;
     font-weight: bold;
+    margin-right: 10px;
+    position: relative;
+    top: -9px;
 }
 .mouse-icon__arrow + .mouse-icon__arrow {
-    
+    margin-right: 0;
 }
 .mouse-icon__message {
     color: inherit;
-    position: absolute;
     white-space: nowrap;
 }
 
