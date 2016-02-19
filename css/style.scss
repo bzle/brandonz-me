@@ -1064,6 +1064,7 @@ header {
     background-position: 44vw calc(100% - 40px);
     float: left;
     padding-bottom: 60px;
+    position: relative;
     text-align: left;
     white-space: nowrap;
 }
@@ -1146,6 +1147,24 @@ header {
 }
 .project__img:focus {
     outline: 0;
+}
+.mouse {
+    border: 1px solid black;
+    width: 20px;
+    height: 36px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+}
+.mouse__wheel {
+    background-color: black;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
 }
 
 /*  -  -  -  -  *\
