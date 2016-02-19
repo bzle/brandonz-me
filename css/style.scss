@@ -1136,19 +1136,22 @@ header {
     outline: 0;
 }
 .mouse-icon {
+    color: #B9B9B9;
     position: absolute;
     bottom: 100px;
     left: calc(50% - 26px);
+    text-align: center;
 }
 .mouse-icon__body {
-    border: 2px solid #B9B9B9;
+    border: 2px solid inherit;
     border-radius: 11px;
+    display: inline-block;
     width: 22px;
     height: 38px;
     position: relative;
 }
 .mouse-icon__wheel {
-    background-color: #B9B9B9;
+    background-color: inherit;
     width: 4px;
     height: 4px;
     border-radius: 2px;
@@ -1157,7 +1160,7 @@ header {
     left: calc(50% - 2px);
 }
 .mouse-icon__arrow.fa {
-    color: #B9B9B9;
+    color: inherit;
     font-size: 24px;
     font-weight: bold;
 }
@@ -1165,7 +1168,8 @@ header {
     
 }
 .mouse-icon__message {
-    
+    color: inherit;
+    position: absolute;
 }
 
 /*  -  -  -  -  *\
