@@ -1143,7 +1143,8 @@ header {
     text-align: center;
 }
 .mouse-icon__body {
-    border: 2px solid inherit;
+    border: 2px solid;
+    border-color: inherit;
     border-radius: 11px;
     display: inline-block;
     width: 22px;
